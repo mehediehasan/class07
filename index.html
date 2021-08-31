@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1 style="text-align: center;">Function in javaScript</h1>
+
+
+    <!-- Homeworkl 1 -->
+    <h2 style="text-align: center;">Homework 1 : Celsius to Fahrenheit</h2>
+
+    <label for="">Input Celsious</label> <br>
+    <input type="number" oninput="ctoF(this.value);" onchange="ctoF(this.value);" />
+    <p>Farenheit : <span id="disFarenheit">0.0</span>f</p>
+
+    <!-- Homeworkl 2 -->
+    <h2 style="text-align: center;">Homework 2 : Smallest Number </h2>
+    <p><span id="setSmallestNum">0</span> is the smallest number among three</p>
+
+
+    <!-- Homeworkl 2 -->
+    <h2 style="text-align: center;">Homework 3 : JS Registraion </h2>
+
+
+    
+        <table>
+            <tr>
+                <th>Name : </th>
+                <td><input type="text" name="" id="getName"></td>
+            </tr>
+            <tr>
+                <th>DOB : </th>
+                <td> <input type="date" name="" id="getDOB"></td>
+            </tr>
+            <tr>
+                <th>Gan : </th>
+                <td><input type="radio" name="gender" value="Male" id="getGenderM"/>Male<input type="radio" name="gender" value="Female" id="getGenderF"/>Female</td>
+            </tr>
+            <tr>
+                <th> District</th>
+					<td>
+					 <select id="getDist" required>
+						<option selected value="">Select One</option>
+						<option value="Dha">Dhaka</option>
+						<option value="CTG">Chittagong</option>
+						<option value="Syl">Sylhet</option>
+						<option value="Khu">Khulna</option>
+						<option value="Raj">Rajshahi</option>
+					 </select>
+					</td>
+            </tr>
+        </table>
+        <br>
+        <button type="submit" onclick=clickReg()>Registration</button>
+    
+
+
+    <!-- Get Registrtion Value -->
+    <br><br>
+    <table>
+        <tr>
+            <th>Name : </th>
+            <td><p id="setName"></p></td>
+        </tr>
+        <tr>
+            <th>DOB : </th>
+            <td><p id="setDOB"></p></td>
+        </tr>
+        <tr>
+            <th>Gan : </th>
+            <td><p id="setGender"></p></td>
+        </tr>
+        <tr>
+            <th>District : </th>
+            <td><p id="setDist"></p></td>
+        </tr>
+    </table>
+
+    <!-- Practice 1 -->
+    <h2 style="text-align: center;">Practice 1</h2>
+
+    <p id="func_1">Function 01</p>
+
+    <!-- Practice 2 -->
+    <h2 style="text-align: center;">Practice 2</h2>
+    <p id="func_2">Function 02</p>
+
+    <!-- Practice 3 -->
+    <h2 style="text-align: center;">Practice 3</h2>
+
+    <input type="number" oninput="weightConverter(this.value);" onchange="weightConverter(this.value);"
+        onclick="weightConverter(this.value);" />
+    <h3 id="func_2">Your Weight is <span id="setKG">0.0</span> KG</h3>
+
+
+    <!-- Practice 4 -->
+    <h2 style="text-align: center;">Practice 4</h2>
+
+    <p id="setPersonInfo">Person Info</p>
+
+
+
+    <hr>
+    <h2 id="jsdemo">This is old</h2>
+
+    <button onclick="document.getElementById('jsdemo').innerHTML='This a new text';">Click Me</button>
+
+    <button id="logged" onclick="document.getElementById('logged').innerHTML='Logged'; ">Login</button>
+
+    <img id="bulbswitch" src="img/bulb_off.png" width="100px" style="display: block;" alt="">
+
+
+    <button onclick="document.getElementById('bulbswitch').src='img/bulb_on.png';">Light On</button>
+    <button onclick="document.getElementById('bulbswitch').src='img/bulb_off.png';">Light Off</button>
+
+
+
+
+    <h2 id="daycounter">Today</h2>
+
+    <p id="oddnumber">Do while</p>
+
+    <p id="country">Country List</p>
+
+    <!-- Js Linkup -->
+    <script src="js/script.js"></script>
+    <script>
+        // var a = 1;
+        // console.log((a*9/5)+32);
+    </script>
+</body>
+
+</html>
